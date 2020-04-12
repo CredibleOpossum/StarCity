@@ -1,0 +1,26 @@
+function reset() {
+		localStorage.clear();
+		location.reload();
+}
+
+function save() {
+		localStorage.setItem("game", btoa(JSON.stringify(game)));
+}
+
+var game = {
+		resources: {
+				wheat: 0,
+				wood: 0,
+		},
+};
+
+if (localStorage.game != undefined) {
+	game = JSON.parse(atob(localStorage.game));
+	update();
+	check();
+}
+
+function collect(resource) {
+	game.resources[resource]++;
+	update();
+}
