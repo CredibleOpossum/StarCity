@@ -1,14 +1,17 @@
 <html>
-	<head>
-		<title>STARCITY</title>
-	</head>
-	
-	<body>
-		<p></p>
-			<div id="amountWheat">Wheat: 0</div>
-			<div id="amountWood">Wood: 0</div>
-		<p></p>
-		<button type="button" id="buttonWheat" onclick="collect('wheat')">Harvest Wheat</button>
-		<button type="button" id="buttonWood" onclick="collect('wood')">Chop Wood</button>
-	</body>
+    <head>
+        <title>STARCITY</title>
+
+    </head>
+
+    <body>
+        <br>
+        <div><button type="button" id="buttonWheat" onclick="collect('wheat')">Collect Wheat</button>
+        <button type="button" id="buttonWood" onclick="collect('wood')">Collect Wood</button></div>
+
+        <div id="currentWheat">Wheat: 0</div>
+        <div id="currentWood">Wood: 0</div>
+    </body>
+    <script src="main-1.js"></script>
+    <script src="update.js"></script>
 </html>
