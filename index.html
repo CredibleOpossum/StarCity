@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>STARCITY</title>
+    </head>
+
+    <body>
+        <br>
+        <div id="resourceButtons">
+            <button type="button" id="buttonWheat" onclick="collectWheat()">Collect Wheat</button>
+            <button type="button" id="buttonStick" onclick="collectStick()">Collect Stick</button>
+        </div>
+        <br>
+        <div id="currentResources">
+            <div id="currentWheat">Wheat: 0 (0/s)</div>
+            <div id="currentStick">Stick: 0 (0/s)</div>
+            <div id="currentStone">Stone: 0 (0/s)</div>
+        </div>
+        <br>
+        <div id="workerButtons">
+            <button type="button" id="buttonMiner" onclick="buyMiner()">Buy miner: 0 = 10 wheat</button>
+            <button type="button" id="butonCollector" onclick="buyCollector()">Buy collector = 10 Wheat + 10 sticks</button>
+            <button type="button" id="buttonFarmer" onclick="buyfarmer()">Buy farmer = 10 wheat</button>
+        </div>
+        <br>
+        <div id="currentWorkers">
+            <div id="currentMiner">Miners: 0</div>
+            <div id="currentCollector">Collectors: 0</div>
+            <div id="currentFarmers">Farmers: 0</div>
+        </div>
+
+    </body>
+    <script src="main-1.js"></script>
+    <script src="update.js"></script>
+</html>
